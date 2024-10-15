@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get-video Demo</title>
+</head>
+<body>
+    <div id="video1"></div>
+    <div id="video2"></div>
+    <script type="module">
+        import { getVideo } from "../get-video.js";
+        document.getElementById("video1").innerHTML = getVideo("https://www.youtube.com/watch?v=aH5UEowVGk4&hello=true#jlksdjflskdjf");
+        document.getElementById("video2").innerHTML = getVideo("https://youtu.be/aH5UEowVGk4");
+    </script>
+</body>
+</html>
